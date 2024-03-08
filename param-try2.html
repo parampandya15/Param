@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Param</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+                body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+button {
+    border-radius: 16px !important;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul>
+                <li><button>btn-1</button></li>
+                <li><button>btn-2</button></li>
+                <li><button>btn-3</button></li>
+                <li><button>btn-4</button></li>
+                <li><button>btn-5</button></li>
+                <li><button>btn-6</button></li>
+                <li><button>btn-7</button></li>
+            </ul>
+            <form>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" class="form-control"
+                                id="firstname"
+                                placeholder="Enter your first name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control"
+                                id="lastname"
+                                placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control"
+                                id="email"
+                                placeholder="Enter your email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="sender">Sender Name:</label>
+                            <input type="text" class="form-control"
+                                id="sender"
+                                placeholder="Enter sender name">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="reply_email">Reply To Email:</label>
+                            <input type="email" class="form-control"
+                                id="reply_email"
+                                placeholder="Enter reply to email">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="telephone">Telephone:</label>
+                            <input type="tel" class="form-control"
+                                id="telephone"
+                                placeholder="Enter telephone number">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </form>
+        </div>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

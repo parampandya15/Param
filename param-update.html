@@ -1,0 +1,124 @@
+<body id="top">
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper">
+            <div id="main_panel2">
+                <div id="left_panel">
+                    <a class="new_button"
+                        onclick="window.location.href = 'includes/funcs.php?viewUser=new';"
+                        id="button1"
+                        style="background-color:#222222;color:#FFFFFF;">Create
+                        New*</a>
+                    <a class="new_button"
+                        onclick="toggle3('division','form1','button2');"
+                        id="button2">View/Edit</a>
+                    <a class="new_button"
+                        onclick="toggle3('division','block5','button5');"
+                        id="button5">User Groups</a>
+                    <a class="new_button"
+                        onclick="toggle3('division','privileges','button3');"
+                        id="button3">Privileges</a>
+                    <a class="new_button"
+                        onclick="toggle3('division','block4','button4');"
+                        id="button4">Notifications</a>
+                    <a class="new_button"
+                        onclick="toggle3('division','block6','button6');"
+                        id="button6">Usage</a>
+                    <a class="new_button"
+                        onclick="window.location.href = 'user.php';">Back to
+                        Users</a>
+                </div>
+                <div id="middle_content">
+                    <form id="form1" class="division" style="display:block;"
+                        action="/user_info.php?d=form1" method="post"
+                        enctype="multipart/form-data">
+                        <div class="row uniform 50%">
+                            <input class="hide" type="text" size="30"
+                                id="user_id" name="user_id" value readonly>
+                            <li class="form-group">
+                                <label for="name">Firstname:*</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="firstname" name="firstname"
+                                    value>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Lastname:*</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="lastname" name="lastname"
+                                    value>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Email:*</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="email" name="email" value>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Sender name:</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="sender_name"
+                                    name="sender_name" value>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Reply to email:</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="replyto" name="replyto" value>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Telephone:*</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="telephone" name="telephone"
+                                    value>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Role/Job Title:*</label>
+                                <input class="form-control" maxlength="50"
+                                    type="text" size="30" id="role" name="role"
+                                    value>
+                            </li>
+                            <li class="form-group" style>
+                                <input class="form-control" name="user_type_id"
+                                    id="user_type_id" type="checkbox"
+                                    value="1"><label
+                                    for="user_type_id">Admin:*</label>
+                            </li>
+                            <li class="form-group">
+                                <label for="name">Expiry Date:</label>
+                                <input class="form-control"
+                                    placeholder="Choose Expiry Date"
+                                    title="Click To Select Date" type="text"
+                                    size="30" id="expiry_date"
+                                    name="expiry_date" value
+                                    onclick="displayDatePicker('expiry_date');">
+                            </li>
+                            <li class="form-group">
+                                <label for="name">User Email Limit Per
+                                    Week:</label>
+                                <input class="form-control" type="text"
+                                    size="30" id="user_email_limit"
+                                    name="user_email_limit" value>
+                            </li>
+                            <li class="form-group">
+                                <label for="branch_id">Branch:*</label>
+                                <select class="form-control" name="branch_id"
+                                    id="branch_id" size="1">
+                                    <option value="176" id="branch_id_176">Main
+                                        Branch</option>
+                                </select>
+                            </li>
+
+                            <ul class="actions">
+                                <li class="form-group"><input
+                                        class="form-control" name="update_user"
+                                        type="submit" value="Update"></li> </ul>
+                        </div>
+                        <div class="inner_delete">
+                            <a title="Delete"
+                                onclick="return confirm('Are You Sure You Want To Delete This Record?');"
+                                href="includes/funcs.php?deleteUser=238nJmNjP5Bao&amp;&amp;t=D&amp;&amp;d="><img
+                                    src="images/cross.jpg"
+                                    class="action_icon"></a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
